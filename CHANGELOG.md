@@ -9,6 +9,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Added
 
+- Add specifications for rule GCI99, this rule concerns the different ways of squaring a value.
+
 ### Changed
 
 - Correction of various typos in rules documentations
