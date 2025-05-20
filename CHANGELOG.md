@@ -14,6 +14,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - GCI69 Java : calls to hasMoreElements() and nextElement() methods from java.util.Enumeration interface aren't flagged anymore when called in a for loop
 
 - Correction of various typos in rules documentations
+- Don't catch RuntimeException. They represent a problem in the program that should be fixed, not handled
 
 ### Deleted
 
