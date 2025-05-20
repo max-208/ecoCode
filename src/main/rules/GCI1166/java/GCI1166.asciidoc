@@ -106,3 +106,30 @@ if (divisor != 0) {
     System.out.println("Division by zero");
 }
 ----
+
+== Exceptions to this rule
+
+IllegalArgumentException are not concerned by this rule, because there is not always a way to check it before raising the Exception.
+
+=== Compliant Solutions
+
+It could be tested by a regex but it would be more costly than throwing the Exception:
+[source,java]
+----
+try {
+    int result = Integer.parseInt(aString);
+} catch (NumberFormatException e) {
+    System.out.println("String is not parseable as a Integer");
+}
+----
+
+It would be difficult to check if a hostname is resolvable beforehand:
+[source,java]
+----
+try {
+    InetAddress address = InetAddress.getByName("invalidhostname");
+    Socket socket = new Socket(address, 8080);
+} catch (UnresolvedAddressException e) {
+    System.out.println("Invalid hostname or IP address");
+}
+----
