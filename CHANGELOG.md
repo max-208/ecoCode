@@ -14,6 +14,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - GCI69 Java : calls to hasMoreElements() and nextElement() methods from java.util.Enumeration interface aren't flagged anymore when called in a for loop
 
 - Correction of various typos in rules documentations
+- [#4](https://github.com/green-code-initiative/creedengo-java/issues/4) Improvement: "++i" statement is not so bad
+
 
 ### Deleted
 
