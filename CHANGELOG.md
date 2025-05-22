@@ -9,10 +9,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Added
 
+- [#322](https://github.com/green-code-initiative/creedengo-rules-specifications/pull/332) [GCI95] Avoid querying SQL columns that are not used
+
 ### Changed
 
-- GCI69 Java : calls to hasMoreElements() and nextElement() methods from java.util.Enumeration interface aren't flagged anymore when called in a for loop
-
+- [GCI91](https://github.com/green-code-initiative/creedengo-rules-specifications/pull/410) Adapt rule GCI91 to java context in case of stream
+- [GCI69](https://github.com/green-code-initiative/creedengo-rules-specifications/pull/396) Calls to hasMoreElements() and nextElement() methods from java.util.Enumeration interface aren't flagged anymore when called in a for loop
 - Correction of various typos in rules documentations
 - [#401](https://github.com/green-code-initiative/creedengo-rules-specifications/pull/401) - Don't catch RuntimeException. They represent a problem in the program that should be fixed, not handled
 
