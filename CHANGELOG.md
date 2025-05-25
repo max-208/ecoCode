@@ -9,6 +9,14 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Added
 
+### Changed
+
+### Deleted
+
+## [2.2.3] - 2025-05-25
+
+### Added
+
 - [#322](https://github.com/green-code-initiative/creedengo-rules-specifications/pull/332) [GCI95] Avoid querying SQL columns that are not used
 
 ### Changed
@@ -17,9 +25,6 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - [GCI69](https://github.com/green-code-initiative/creedengo-rules-specifications/pull/396) Calls to hasMoreElements() and nextElement() methods from java.util.Enumeration interface aren't flagged anymore when called in a for loop
 - Correction of various typos in rules documentations
 - [#44](https://github.com/green-code-initiative/creedengo-java/issues/44) Improvement: "++i" statement is not so bad
-
-
-### Deleted
 
 ## [2.2.2] - 2025-03-13
 
@@ -409,7 +414,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## Comparison List
 
-[unreleased](https://github.com/green-code-initiative/creedengo-rules-specifications/compare/2.2.1...HEAD)
+[unreleased](https://github.com/green-code-initiative/creedengo-rules-specifications/compare/2.2.3...HEAD)
+[2.2.3](https://github.com/green-code-initiative/creedengo-rules-specifications/compare/2.2.2...2.2.3)
+[2.2.2](https://github.com/green-code-initiative/creedengo-rules-specifications/compare/2.2.1...2.2.2)
 [2.2.1](https://github.com/green-code-initiative/creedengo-rules-specifications/compare/2.2.0...2.2.1)
 [2.2.0](https://github.com/green-code-initiative/creedengo-rules-specifications/compare/2.1.0...2.2.0)
 [2.1.0](https://github.com/green-code-initiative/creedengo-rules-specifications/compare/2.0.0...2.1.0)
