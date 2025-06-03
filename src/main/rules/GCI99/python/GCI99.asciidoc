@@ -30,7 +30,17 @@ The following results were obtained through local experiments.
 
 === Context
 
-This rule is based on the fact that to perform the following calculation x², there are different ways of doing it in Python. The most common method is to do x**2, which at compile time will be translated as BINARY_POWER and thus lead to additional calculations, whereas x*x will be translated as BINARY_MULTIPLY, which is a rather simple CPU instruction. Finally, math.pow is another alternative that depends on the math library.
+This rule is based on the fact that to perform the calculation x², there are different ways of doing it in Python. The most common method is x**2, which at compile time is translated into BINARY_POWER, resulting in additional floating-point and logarithmic calculations.
+
+This is due to the internal implementation of exponentiation in Python, often based on the identity:
+```python
+x**y = exp(y * log(x))
+```
+This allows general handling of edge cases (negative values, floats, etc.), but makes it heavier than direct multiplication. In contrast, x * x is compiled into BINARY_MULTIPLY, a direct and efficient CPU instruction.
+
+By contrast, x * x is compiled to BINARY_MULTIPLY, which corresponds to a single, simple CPU instruction.
+
+Finally, math.pow adds further overhead due to function calls and type conversions.
 
 *lambda x: x * x*
 [source,bytecode]
