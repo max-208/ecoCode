@@ -9,9 +9,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Added
 
-- Add specifications for rule GCI99, this rule concerns the different ways of squaring a value.
-- [#382](https://github.com/green-code-initiative/creedengo-rules-specifications/pull/382) Add specifications for rule GCI96, this rule is specific to Python because it's based on the `pandas` library, a library used for data.
 - [#400](https://github.com/green-code-initiative/creedengo-rules-specifications/pull/400) Add rule GCI535 - Prefer usage of Intl.NumberFormat
+- [#382](https://github.com/green-code-initiative/creedengo-rules-specifications/pull/382) Add specifications for rule GCI96, this rule is specific to Python because it's based on the `pandas` library, a library used for data.
+- [#383](https://github.com/green-code-initiative/creedengo-rules-specifications/pull/383) Add specifications for rule GCI97, this rule concerns the different ways of squaring a value.
 
 ### Changed
 
